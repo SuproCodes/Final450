@@ -1,0 +1,10 @@
+string reverseWord(string str){
+  int n = str.length();
+  int i,j;
+  for(i=0,j=n-1;i<n/2;i++,j--){
+      char temp = str[i];
+      str[i] = str[j];
+      str[j] = temp;
+  }
+  return str;
+}
